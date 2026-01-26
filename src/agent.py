@@ -3,8 +3,8 @@ import json
 import os
 from typing import Dict, Any
 
-from pipeline import load_texts, preprocess, build_records
-from nlp import extract
+from src.pipeline import load_texts, preprocess, build_records
+from src.nlp import extract
 
 INPUT_PATH = "data/raw/textos.txt"
 OUTPUT_PATH = "outputs/extractions.json"
