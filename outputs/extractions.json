@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "texto": "Cliente relata compra não reconhecida no cartão em 12/01/2025 no valor de R$ 399,90. Solicita estorno urgente. Protocolo 77821.",
+    "categoria": "compra_não_reconhecida",
+    "data": "12/01/2025",
+    "valor": "399,90",
+    "protocolo": "77821"
+  },
+  {
+    "id": 2,
+    "texto": "Usuária informa que o cartão foi bloqueado após tentativa de compra online. Data 03/02/2025. Deseja desbloqueio e confirmação de segurança.",
+    "categoria": "cartão_bloqueado",
+    "data": "03/02/2025",
+    "valor": null,
+    "protocolo": null
+  },
+  {
+    "id": 3,
+    "texto": "Cliente pede aumento de limite. Diz que renda subiu e que teve pagamentos em dia nos últimos 6 meses. Protocolo 99012.",
+    "categoria": "aumento_limite",
+    "data": null,
+    "valor": null,
+    "protocolo": "99012"
+  },
+  {
+    "id": 4,
+    "texto": "Reclamação: cobrança duplicada em 22/03/2025 referente a assinatura. Valor R$ 59,90. Solicita estorno e cancelamento.",
+    "categoria": "cobrança_duplicada",
+    "data": "22/03/2025",
+    "valor": "59,90",
+    "protocolo": null
+  },
+  {
+    "id": 5,
+    "texto": "Cartão não chegou. Pedido feito em 10/04/2025. Cliente mudou endereço e quer atualização cadastral. Protocolo 11223.",
+    "categoria": "entrega_cartão",
+    "data": "10/04/2025",
+    "valor": null,
+    "protocolo": "11223"
+  }
+]
