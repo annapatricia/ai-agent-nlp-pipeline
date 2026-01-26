@@ -1,3 +1,5 @@
+#carregar, limpar , preparar
+
 import os
 import re
 from typing import List, Dict
