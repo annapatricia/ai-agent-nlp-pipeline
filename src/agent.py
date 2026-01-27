@@ -2,6 +2,8 @@
 import json
 import os
 from typing import Dict, Any
+from src.llm import llm_extract
+
 
 from src.pipeline import load_texts, preprocess, build_records
 from src.nlp import extract
@@ -17,8 +19,15 @@ def run_agent(input_path: str = INPUT_PATH, output_path: str = OUTPUT_PATH) -> D
 
     enriched = []
     for r in records:
-        info = extract(r["texto"])
+        # tenta LLM primeiro
+        info = llm_extract(r["texto"])
+    
+        # fallback para regras se não tiver chave / falhar
+        if info is None:
+            info = extract(r["texto"])
+    
         enriched.append({**r, **info})
+
 
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
