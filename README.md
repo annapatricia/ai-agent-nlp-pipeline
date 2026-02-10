@@ -38,26 +38,25 @@ The architecture is intentionally modular, enabling future integration with:
 ## 📂 Repository Structure
 
 ai-agent-nlp-pipeline/
+├── .github/
+│   └── workflows/
+│       └── run_agent.yml        # CI workflow to run the agent pipeline
 │
 ├── data/
-│ └── raw/
-│ └── textos.txt # Raw unstructured input text
+│   └── raw/
+│       └── textos.txt           # Raw unstructured input text
 │
 ├── src/
-│ ├── agent.py # Agent logic and decision flow
-│ ├── pipeline.py # End-to-end pipeline orchestration
-│ ├── nlp.py # NLP preprocessing and extraction
-│ ├── llm.py # LLM abstraction layer (mock or real)
-│ └── prompts.py # Prompt templates and instructions
+│   ├── agent.py                 # Agent logic and decision flow
+│   ├── pipeline.py              # End-to-end pipeline orchestration
+│   ├── nlp.py                   # NLP preprocessing and extraction
+│   ├── llm.py                   # LLM abstraction layer
+│   └── prompts.py               # Prompt templates
 │
 ├── outputs/
-│ └── extractions.json # Example of structured output
+│   └── extractions.json         # Example structured output (JSON)
 │
-├── .github/
-│ └── workflows/
-│ └── run_agent.yml # CI workflow for pipeline execution
-│
-├── requirements.txt # Python dependencies
+├── requirements.txt             # Python dependencies
 └── README.md
 
 
