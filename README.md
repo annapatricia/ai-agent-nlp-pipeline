@@ -62,7 +62,6 @@ ai-agent-nlp-pipeline/
 
 
 ---
-
 ## ⚙️ How It Works
 
 1. **Input ingestion**  
@@ -84,13 +83,14 @@ ai-agent-nlp-pipeline/
 An example of automatically generated structured data can be found at:
 
 
+outputs/extractions.json
+
+
 This file represents how unstructured textual information can be transformed into **machine-readable, analytics-ready data**.
 
 ---
 
 ## 🚀 How to Run (Local)
-
-> Setup instructions can be expanded as the project evolves.
 
 ```bash
 pip install -r requirements.txt
