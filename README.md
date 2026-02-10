@@ -37,4 +37,66 @@ The architecture is intentionally modular, enabling future integration with:
 
 ## 📂 Repository Structure
 
+ai-agent-nlp-pipeline/
+│
+├── data/
+│ └── raw/
+│ └── textos.txt # Raw unstructured input text
+│
+├── src/
+│ ├── agent.py # Agent logic and decision flow
+│ ├── pipeline.py # End-to-end pipeline orchestration
+│ ├── nlp.py # NLP preprocessing and extraction
+│ ├── llm.py # LLM abstraction layer (mock or real)
+│ └── prompts.py # Prompt templates and instructions
+│
+├── outputs/
+│ └── extractions.json # Example of structured output
+│
+├── .github/
+│ └── workflows/
+│ └── run_agent.yml # CI workflow for pipeline execution
+│
+├── requirements.txt # Python dependencies
+└── README.md
+
+
+---
+
+## ⚙️ How It Works
+
+1. **Input ingestion**  
+   Raw text is loaded from `data/raw/textos.txt`.
+
+2. **Preprocessing & NLP extraction**  
+   The NLP module applies text normalization and extraction logic.
+
+3. **Agent orchestration**  
+   The agent coordinates each step of the pipeline, deciding how and when to apply each component.
+
+4. **Structured output generation**  
+   Extracted information is automatically exported to structured formats (JSON / CSV).
+
+---
+
+## 📊 Example Output
+
+An example of automatically generated structured data can be found at:
+
+
+This file represents how unstructured textual information can be transformed into **machine-readable, analytics-ready data**.
+
+---
+
+## 🚀 How to Run (Local)
+
+> Setup instructions can be expanded as the project evolves.
+
+```bash
+pip install -r requirements.txt
+python src/pipeline.py
+
+
+
+
 
