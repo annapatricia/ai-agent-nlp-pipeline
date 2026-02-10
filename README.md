@@ -36,7 +36,7 @@ The architecture is intentionally modular, enabling future integration with:
 ---
 
 ## 📂 Repository Structure
-
+```
 ai-agent-nlp-pipeline/
 ├── .github/
 │   └── workflows/
@@ -58,6 +58,7 @@ ai-agent-nlp-pipeline/
 │
 ├── requirements.txt             # Python dependencies
 └── README.md
+``
 
 
 ---
